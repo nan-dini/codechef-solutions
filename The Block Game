@@ -1,0 +1,25 @@
+    #include<stdio.h>
+    void func(int a)
+    {
+    	int num=0,b=a;
+    	while(b!=0)
+    	{
+    		num=(num*10)+(b%10);
+    		b=b/10;
+    	}		
+  	if(num==a)
+		printf("wins\n");
+	else
+		printf("losses\n");	
+    }		
+    int main()
+    {
+    	int n,a;
+    	scanf("%d",&n);
+    	for(int i=0; i<n; ++i)
+	{
+    		scanf("%d",&a);
+    		func(a);
+	}
+    	return 0;
+    } 
